@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: rgb(0, 0, 0);
+     
+      margin-top: 0vw;
+     
+      padding: 15px;
+      font-size: 1vw;
+     font-weight: lighter;
+     display: inline;
+    }
+
+    #Header{
+     background-color: rgba(255, 255, 255, 0.658);
+     position: sticky;
+     top: 0;
+     height: 10vh;
+    }
+
+    #MenuIcon{
+        height: auto;
+        width: 1.65vw;
+        margin-left: 1.7vw;
+        margin-top: 1.5vw;
+        display: inline;
+    }
+
+    #men {
+      font-size: 6vh;
+      margin: 20px;
+      margin-top: 100px;
+      text-align: center;
+    }
+
+   .mene {
+    height: auto;
+    width: 24vw;
+   margin: 0.3vw;
+      margin-bottom: 6% ;
+      margin-top: 1%;
+      transition: filter 0.3s ease;
+   }    
+
+.mene:hover {
+  filter: brightness(80%);
+}
+
+   #mene {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+#SmallerText{
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 5vh;
+}
+#Contact {
+    text-align: left;
+    font-size: 2vh;
+    margin-top: 6vh;
+    display: block;
+    position: static;
+    line-height: 3dvb;
+    margin-right: 15vw;
+     color: grey;
+}
+#Customer {
+    text-align: left;
+    font-size: 2vh;
+    margin-top: 6vh;
+    display: block;
+    position: static;
+    line-height: 3dvb;
+     margin-right: 15vw;
+      color: grey;
+}
+
+#Digital {
+    text-align: left;
+    font-size: 2vh;
+    margin-top: 6vh;
+    display: block;
+    position: static;
+    line-height: 3dvb;
+    margin-right: 15vw;
+     color: grey;
+}
+
+#Privacy {
+    text-align: left;
+    font-size: 2vh;
+    margin-top: 6vh;
+    display: block;
+    position: static;
+    line-height: 3dvb;
+    margin-right: 15vw;
+     color: grey;
+}
+
+#Legal {
+    text-align: left;
+    font-size: 2vh;
+    margin-top: 6vh;
+    display: block;
+    position: static;
+    line-height: 3dvb;
+    margin-right: 15vw;
+     color: grey;
+}
+#Contact::first-line,
+#Customer::first-line,
+#Digital::first-line,
+#Privacy::first-line,
+#Legal::first-line {
+    font-weight: bold;
+    color: black;
+}
+  </style>
+</head>
+<body>
+
+<div id="Header">
+    <img src="https://cdn.icon-icons.com/icons2/1863/PNG/512/menu_118924.png" 
+         id="MenuIcon">
+  <h1> Menu</h1>      
+</div>
+
+<p id="men">Men Clothing</p>
+  <p id="SmallerText">New Collections of Men Clothing</p>
+
+<div id="mene">
+
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5bb40489/images/2301001B-W01A0-_RED-BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc716306d/images/35010022-W0179-_RED_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw2c8cbb0b/images/3803005B-Y003O-_MULTI_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd23b317b/images/2401000J-W017M-_PINK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0d607611/images/2H01000P-J00A8-_RED-BLACK_001_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw16fc899b/images/3G010049-J001M-_BURGUNDY_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd0c2d506/images/2H01000P-J009T-_RED-GREEN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwffce7382/images/3G01001G-J009Y-_DISTRESSED-TARTAN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw1436c167/images/24010005-W0178-_OFF-WHITE_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4e5c8b0/images/2201000H-W017B-_CREAM-BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5ea6593b/images/2H01000P-J0009-_BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw53921c43/images/38030056-Y001V-_NAVY_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5bb40489/images/2301001B-W01A0-_RED-BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc716306d/images/35010022-W0179-_RED_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw2c8cbb0b/images/3803005B-Y003O-_MULTI_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd23b317b/images/2401000J-W017M-_PINK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0d607611/images/2H01000P-J00A8-_RED-BLACK_001_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw16fc899b/images/3G010049-J001M-_BURGUNDY_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd0c2d506/images/2H01000P-J009T-_RED-GREEN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwffce7382/images/3G01001G-J009Y-_DISTRESSED-TARTAN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw1436c167/images/24010005-W0178-_OFF-WHITE_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4e5c8b0/images/2201000H-W017B-_CREAM-BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5ea6593b/images/2H01000P-J0009-_BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw53921c43/images/38030056-Y001V-_NAVY_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5bb40489/images/2301001B-W01A0-_RED-BLACK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc716306d/images/35010022-W0179-_RED_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw2c8cbb0b/images/3803005B-Y003O-_MULTI_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd23b317b/images/2401000J-W017M-_PINK_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0d607611/images/2H01000P-J00A8-_RED-BLACK_001_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw16fc899b/images/3G010049-J001M-_BURGUNDY_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd0c2d506/images/2H01000P-J009T-_RED-GREEN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+<img class="mene" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwffce7382/images/3G01001G-J009Y-_DISTRESSED-TARTAN_002_large.jpg?sw=684&sh=790&sm=fit&q=80">
+
+<p id="Contact">CONTACT<br>
+viviennewestwood.com <br>
+viviennewestwood@gmail.com<br>
+LOS ANGELES - 8320 Melrose Avenue
+8320 Melrose Avenue,</p>
+
+<p id="Customer">CUSTOMER SERVICE<br>
+FAQs & Contact<br>
+Track Your Order<br>
+Return & Refund Policy</p>
+
+<p id="Digital">DIGITAL<br>
+Social Media Channels<br>
+Accessibility<br>
+Youtube</p>
+
+<p id="Privacy">PRIVACY & COOKIE POLICY <br>
+Privacy Policy <br>
+Cookie Policy <br>
+Cookies Settings</p>
+
+<p id="Legal">LEGAL<br>
+Legal Notice<br>
+Terms & Conditions<br>
+Brand Protection Statement</p>
