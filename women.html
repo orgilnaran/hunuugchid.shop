@@ -132,15 +132,92 @@
     font-weight: bold;
     color: black;
 }
+
+
+
+
+
+
+/* SIDE MENU */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden off-screen */
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+  padding-top: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#sideMenu.show {
+  left: 0; /* slide in */
+}
+
+#sideMenu a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+#sideMenu a:hover {
+  background-color: #f3f3f3;
+}
+
+/* Menu button */
+#MenuButton {
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
+
+
+span{
+  font-size: 2.5vh;
+  margin-left: 0.7vw;
+}
+
+
+
   </style>
 </head>
 <body>
 
-<div id="Header">
-    <img src="https://cdn.icon-icons.com/icons2/1863/PNG/512/menu_118924.png" 
-         id="MenuIcon">
-  <h1> Menu</h1>      
+
+
+
+ <script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("show");
+  }
+</script>
+
+
+
+
+
+  <div id="Header">
+  <div id="MenuButton" onclick="toggleMenu()">☰<span>Menu</span></div>
 </div>
+
+<div id="sideMenu">
+  <a href="index.html">Home</a>
+  <a href="new-arrival.html">NEW ARRIVAL</a>
+  <a href="men.html">MEN'S CLOTHING</a>
+  <a href="women.html">WOMEN'S CLOTHING</a>
+  <a href="bridal-boutique.html">BRIDAL BOUTIQUE</a>
+</div>
+
 
 <p id="women">Women Clothing</p>
   <p id="SmallerText">New Collections of Women Clothing</p>
