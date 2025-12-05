@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>new-arrival</title>
+  <title>Menu</title>
 
   <style>
     body {
@@ -97,7 +97,7 @@
       margin-left: 15px;
       margin-top: 15px;
       cursor: pointer;
-      user-select: none;
+      user-select: none; 
     }
 
     #Header {
@@ -105,7 +105,6 @@
       position: sticky;
       top: 0;
       height: 10vh;
-      z-index: 100;
     }
 
     span {
@@ -164,6 +163,7 @@
       right: 15px;
       font-size: 30px;
       cursor: pointer;
+      z-index: 1000;
     }
 
     @keyframes fadeIn {
@@ -181,15 +181,11 @@
 
   <!-- SIDE MENU -->
   <div id="sideMenu">
-   <a href="index.html">Home</a>
-  <a href="new-arrival.html">NEW ARRIVAL</a>
-  <a href="men.html">MEN'S CLOTHING</a>
-  <a href="women.html">WOMEN'S CLOTHING</a>
-  <a href="bridal-boutique.html">BRIDAL BOUTIQUE</a>
-  <a href="jewellery.html">JEWELLERY</a>
-  <a href="gifts.html">GIFTS</a>
-  <a href="hunuugchid-world.html">HUNUUGCHID WORLD</a>
-
+    <a href="index.html">Home</a>
+    <a href="new-arrival.html">NEW ARRIVAL</a>
+    <a href="men.html">MEN'S CLOTHING</a>
+    <a href="women.html">WOMEN'S CLOTHING</a>
+    <a href="bridal-boutique.html">BRIDAL BOUTIQUE</a>
   </div>
 
   <p>New arrivals</p>
@@ -298,8 +294,8 @@
       <span class="close">&times;</span>
       <img id="modalImg">
       <h2 id="modalName"></h2>
-      <p id="modalPrice" style="font-weight:bold;"></p>
-      <p id="modalInfo"></p>
+      <p id="modalPrice" style="font-weight:bold; font-size: 100%;"></p>
+      <p id="modalInfo"  style="font-size: smaller;"></p>
     </div>
   </div>
 
