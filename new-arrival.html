@@ -98,6 +98,7 @@
       margin-top: 15px;
       cursor: pointer;
       user-select: none; 
+      display: inline;
     }
 
     #Header {
@@ -106,6 +107,8 @@
       top: 0;
       height: 10vh;
       z-index: 100;
+      /* display: flex;
+      justify-content: center; */
     }
 
     span {
@@ -171,6 +174,16 @@
       from { opacity: 0; transform: scale(0.95); }
       to { opacity: 1; transform: scale(1); }
     }
+
+
+    #logo{
+      margin-top: 2.5vh;
+      display: inline;
+      height: 5vh;
+      width: auto;
+      position: fixed;
+      left: 44%;
+    }
   </style>
 </head>
 <body>
@@ -178,6 +191,8 @@
   <!-- HEADER -->
   <div id="Header">
     <div id="MenuButton" onclick="toggleMenu()">☰ <span>Menu</span></div>
+    <img id="logo"
+         src="assets/HUNUUGCHID.png">
   </div>
 
   <!-- SIDE MENU -->
