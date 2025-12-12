@@ -125,16 +125,75 @@
   user-select: none;
 }
 
-
-
-
-
-
 span{
   font-size: 2.5vh;
   margin-left: 0.7vw;
 }
+@media (max-width: 900px) {
+      #briContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
+    @media (max-width: 600px) {
+      #briContainer {
+        grid-template-columns: 1fr;
+      }
+      
+    }
+
+    /* PRODUCT MODAL */
+    #productModal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    #modalBox {
+      background: white;
+      padding: 20px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+      animation: fadeIn 0.3s ease;
+    }
+
+    #modalImg {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+
+    #logo{
+      margin-top: 2.5vh;
+      display: inline;
+      height: 5vh;
+      width: auto;
+      position: fixed;
+      left: 44%;
+    }
 
 
   </style>
@@ -176,79 +235,113 @@ span{
 
 <div id="bri">
 
-    
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw63af24b7/images/63030007-02P127-CN_PLATINUM-PEARL-CRYSTAL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc054dbee/images/O1101038P-W00XX-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw23cd1c78/images/O1502004J-W00XV-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw936edb77/images/O1101034Y-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8be7b4fc/images/63030008-02P128-CN_PLATINUM-PEARL-MULTI_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw94110eda/images/O8202002G-C0036-_SILK-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd89f15b4/images/O8109000F-W00BM-_OFF-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd3a00a2a/images/O8109000E-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw84748778/images/63030006-02G121-CN_PINK-GOLD-Silk-Pearl_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4d5b917/images/1101034Y-W00NQ-_RED_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5f1e00f5/images/1101038P-W0153-_BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb11f997e/images/6303002F-02P178-CN_platinum-ruthenium-black-agate-gemstone-jet_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw14013688/images/63010006-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwa02e0c19/images/11010379-W00NU-_ULTRA-BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfb3d48a7/images/11010379-W00NU-_PLUM_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb9e2834b/images/63030009-02R118-CN_Gold_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9757ff83/images/73050002W-L00AC-_SILVER_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw63af24b7/images/63030007-02P127-CN_PLATINUM-PEARL-CRYSTAL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc054dbee/images/O1101038P-W00XX-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw23cd1c78/images/O1502004J-W00XV-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw936edb77/images/O1101034Y-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8be7b4fc/images/63030008-02P128-CN_PLATINUM-PEARL-MULTI_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw94110eda/images/O8202002G-C0036-_SILK-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd89f15b4/images/O8109000F-W00BM-_OFF-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd3a00a2a/images/O8109000E-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw84748778/images/63030006-02G121-CN_PINK-GOLD-Silk-Pearl_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4d5b917/images/1101034Y-W00NQ-_RED_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5f1e00f5/images/1101038P-W0153-_BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb11f997e/images/6303002F-02P178-CN_platinum-ruthenium-black-agate-gemstone-jet_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw14013688/images/63010006-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwa02e0c19/images/11010379-W00NU-_ULTRA-BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfb3d48a7/images/11010379-W00NU-_PLUM_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb9e2834b/images/63030009-02R118-CN_Gold_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9757ff83/images/73050002W-L00AC-_SILVER_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw63af24b7/images/63030007-02P127-CN_PLATINUM-PEARL-CRYSTAL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc054dbee/images/O1101038P-W00XX-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw23cd1c78/images/O1502004J-W00XV-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw936edb77/images/O1101034Y-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8be7b4fc/images/63030008-02P128-CN_PLATINUM-PEARL-MULTI_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw94110eda/images/O8202002G-C0036-_SILK-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd89f15b4/images/O8109000F-W00BM-_OFF-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd3a00a2a/images/O8109000E-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw84748778/images/63030006-02G121-CN_PINK-GOLD-Silk-Pearl_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4d5b917/images/1101034Y-W00NQ-_RED_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5f1e00f5/images/1101038P-W0153-_BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb11f997e/images/6303002F-02P178-CN_platinum-ruthenium-black-agate-gemstone-jet_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw14013688/images/63010006-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwa02e0c19/images/11010379-W00NU-_ULTRA-BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfb3d48a7/images/11010379-W00NU-_PLUM_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb9e2834b/images/63030009-02R118-CN_Gold_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9757ff83/images/73050002W-L00AC-_SILVER_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw63af24b7/images/63030007-02P127-CN_PLATINUM-PEARL-CRYSTAL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc054dbee/images/O1101038P-W00XX-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw23cd1c78/images/O1502004J-W00XV-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw936edb77/images/O1101034Y-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8be7b4fc/images/63030008-02P128-CN_PLATINUM-PEARL-MULTI_001_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw94110eda/images/O8202002G-C0036-_SILK-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd89f15b4/images/O8109000F-W00BM-_OFF-WHITE_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd3a00a2a/images/O8109000E-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw84748778/images/63030006-02G121-CN_PINK-GOLD-Silk-Pearl_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf4d5b917/images/1101034Y-W00NQ-_RED_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5f1e00f5/images/1101038P-W0153-_BLACK_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
-<img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-
+  <!-- PRODUCT GRID -->
+  <div id="briContainer">
+
+    <div class="product" onclick="openProduct(this)"
+      data-name="Necklace"
+      data-price="$5900"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw63af24b7/images/63030007-02P127-CN_PLATINUM-PEARL-CRYSTAL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div>  
+     <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$10000"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div> 
+     <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$100000"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0ec3738c/images/O1101034Y-W00NQ-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div>  
+    <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$9000"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div> 
+        <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$7000"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6b6d67e9/images/O1101037D-W00NU-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div> 
+        <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$100090"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc054dbee/images/O1101038P-W00XX-_PEARL_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+
+    </div> 
+        <div class="product" onclick="openProduct(this)"
+      data-name="Earings"
+      data-price="$167809"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+    </div> 
+        <div class="product" onclick="openProduct(this)"
+      data-name="Earings"
+      data-price="$25000"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw609ece42/images/62020034-02P128-CN_PLATINUM-PEARL-MULTI_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+
+    </div> 
+        <div class="product" onclick="openProduct(this)"
+      data-name="Dress"
+      data-price="$9999"
+      data-info="High-end featured items.">
+      <img class="bri" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw936edb77/images/O1101034Y-W00XT-_IVORY_000_large.jpg?sw=720&sh=832&sm=fit&q=80">
+
+    </div> 
+    <!-- PRODUCT MODAL -->
+  <div id="productModal">
+    <div id="modalBox">
+      <span class="close">&times;</span>
+      <img id="modalImg">
+      <h2 id="modalName"></h2>
+      <p id="modalPrice" style="font-weight:bold; font-size: 100%;"></p>
+      <p id="modalInfo"  style="font-size: smaller;"></p>
+    </div>
+  </div>
+<!-- JAVASCRIPT -->
+  <script>
+    window.onload = function () {
+
+      // Toggle side menu
+      window.toggleMenu = function () {
+        document.getElementById("sideMenu").classList.toggle("show");
+      };
+
+      // Open product modal
+      window.openProduct = function (el) {
+        const img = el.querySelector("img").src;
+        const name = el.dataset.name;
+        const price = el.dataset.price;
+        const info = el.dataset.info;
+
+        document.getElementById("modalImg").src = img;
+        document.getElementById("modalName").innerText = name;
+        document.getElementById("modalPrice").innerText = price;
+        document.getElementById("modalInfo").innerText = info;
+
+        document.getElementById("productModal").style.display = "flex";
+      };
+
+      // Close modal button
+      document.querySelector(".close").onclick = function () {
+        document.getElementById("productModal").style.display = "none";
+      };
+
+      // Close clicking outside
+      window.onclick = function (e) {
+        if (e.target === document.getElementById("productModal")) {
+          document.getElementById("productModal").style.display = "none";
+        }
+      };
+    };
+  </script>
+
+</body>
+</html>
