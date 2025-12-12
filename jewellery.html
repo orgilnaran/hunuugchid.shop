@@ -1,196 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu</title>
-  <style>
-   
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jewellery</title>
 
+<style>
 
-   
-
-
-    p {
-      text-align: center;
-      font-size: 5vw;
-      font-weight: lighter;
-      margin-top: 5vh;
-    }
-
-
-    img{
-        transition: filter 0.3s ease;
-    }
-
-
-
-
-    #arrivalContainer {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      width: 90%;
-      margin: 0 auto;
-    }
-
-
-    #big {
-      grid-column: 1 / 3;
-      grid-row: 1 / 3;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      background-color: #f3f3f3;
-      border-radius: 6px;
-    }
-
-
-   
-    #arrivalContainer img:not(#big) {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      background-color: #f3f3f3;
-      border-radius: 6px;
-      display: block;
-      margin-bottom: 7vh;
-    }
-
-
-   
-    .oggyy {
-      background-color: rgb(149, 148, 148);
-      color: black;
-      font-size: 48px;
-      font-weight: lighter;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      padding: 3%;
-      text-align: center;
-      margin: 90px auto;
-      width: fit-content;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-
-    .oggyy:hover {
-      background-color: #222;
-      color: white;
-      cursor: pointer;
-    }
-
-
-   
-    @media (max-width: 900px) {
-      #arrivalContainer {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-
-    @media (max-width: 600px) {
-      #arrivalContainer {
-        grid-template-columns: 1fr;
-      }
-      #big {
-        grid-column: auto;
-        grid-row: auto;
-      }
-    }
-
-
-#Header{
-     background-color: rgba(255, 255, 255, 0.658);
-     position: sticky;
-     top: 0;
-     height: 10vh;
-     z-index: 100;
-    }
- #MenuIcon{
-        height: auto;
-        width: 1.65vw;
-        margin-left: 1.7vw;
-        margin-top: 1.5vw;
-        display: inline;
-    }
-#menu{
-  color: rgb(0, 0, 0);
-     
-      margin-top: 0vw;
-     
-      padding: 15px;
-      font-size: 1vw;
-     font-weight: lighter;
-     display: inline;
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
+/* HEADER */
+#Header {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
 
- 
-     
-     
+#MenuButton {
+  font-size: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  user-select: none;
+}
 
+#MenuButton span {
+  font-size: 18px;
+  margin-left: 8px;
+}
 
-img:hover {
+/* TITLE */
+p {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: lighter;
+  margin-top: 5vh;
+}
+
+#SmllTxt {
+  text-align: center;
+  font-size: 1.2vw;
+  margin-bottom: 4vh;
+}
+
+/* GRID */
+#arrivalContainer {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.bigItem {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+#arrivalContainer img {
+  width: 100%;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+#arrivalContainer img:hover {
   filter: brightness(80%);
 }
 
-
-
-
-#SmllTxt{
-  text-align: center;
-  font-size: 1.2vw;
-  margin-bottom: 10vh;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #arrivalContainer { grid-template-columns: repeat(2, 1fr); }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 600px) {
+  #arrivalContainer { grid-template-columns: 1fr; }
+  .bigItem { grid-column: auto; grid-row: auto; }
+}
 
 /* SIDE MENU */
 #sideMenu {
   position: fixed;
-  top: 0;
-  left: -250px; /* hidden off-screen */
+  top: 0; left: -250px;
   width: 250px;
   height: 100vh;
-  background-color: white;
+  background: white;
   box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
   padding-top: 20px;
-  transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 2000;
 }
-
-
-#sideMenu.show {
-  left: 0; /* slide in */
-}
-
-
+#sideMenu.show { left: 0; }
 #sideMenu a {
   display: block;
   padding: 15px 20px;
@@ -198,74 +109,60 @@ img:hover {
   color: black;
   text-decoration: none;
 }
+#sideMenu a:hover { background: #f3f3f3; }
 
-
-#sideMenu a:hover {
-  background-color: #f3f3f3;
+/* PRODUCT MODAL */
+#productModal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
 }
 
+#modalBox {
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 430px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  animation: fadeIn .25s ease;
+}
 
-/* Menu button */
-#MenuButton {
-  font-size: 30px;
-  margin-left: 15px;
-  margin-top: 15px;
+#modalImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 35px;
   cursor: pointer;
-  user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-span{
-  font-size: 2.5vh;
-  margin-left: 0.7vw;
+@keyframes fadeIn {
+  from { opacity:0; transform:scale(.95); }
+  to { opacity:1; transform:scale(1); }
 }
 
-
-
-
-
-
-  </style>
+</style>
 </head>
+
 <body>
 
-
-
-
-
-
-
-
- <script>
-  function toggleMenu() {
-    document.getElementById("sideMenu").classList.toggle("show");
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-  <div id="Header">
-  <div id="MenuButton" onclick="toggleMenu()">☰<span>Menu</span></div>
+<!-- HEADER -->
+<div id="Header">
+  <div id="MenuButton" onclick="toggleMenu()">☰ <span>Menu</span></div>
 </div>
 
-
+<!-- SIDE MENU -->
 <div id="sideMenu">
   <a href="index.html">Home</a>
   <a href="new-arrival.html">NEW ARRIVAL</a>
@@ -276,37 +173,76 @@ span{
   <a href="gifts.html">GIFTS</a>
 </div>
 
+<script>
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("show");
+}
+</script>
 
- 
-  <p>Jewellery</p>
+<!-- TITLE -->
+<p>Jewellery</p>
+<p id="SmllTxt">Vivienne Westwood hand-crafted jewellery — brooches, pins, and hair accessories.</p>
 
+<!-- PRODUCT GRID -->
+<div id="arrivalContainer">
 
-  <p id="SmllTxt">Vivienne Westwood hair accessories, pins and brooches for women are skilfully crafted by hand. We adhere to the highest standards of workmanship, with regards to every stage of the process.</p>
+  <!-- Big Items -->
+  <img class="bigItem product" src="https://www.viviennewestwood.com/dw/image/...">
 
+  <img class="bigItem product" src="https://www.viviennewestwood.com/dw/image/...">
 
-  <div id="arrivalContainer">
-    <img id="big" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Library-Sites-viviennewestwood-global-content/default/dwa9365a33/images/plp/AW2526/Womens/PLP_inline%20content%20asset_AW2526_Womenswear_Clothing_25.jpg?sw=1384&sh=1992&q=80" alt="">
+  <!-- Regular Items -->
+  <img class="product" src="assets/j1.jpg">
+  <img class="product" src="assets/j2.jpg">
+  <img class="product" src="assets/j3.jpg">
+  <img class="product" src="assets/j4.jpg">
+  <img class="product" src="assets/j5.jpg">
+  <img class="product" src="assets/j6.jpg">
+  <img class="product" src="assets/j7.jpg">
+  <img class="product" src="assets/j8.jpg">
+  <img class="product" src="assets/j9.jpg">
+  <img class="product" src="assets/j10.jpg">
 
+</div>
 
-   
-    
-<img id="big" src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Library-Sites-viviennewestwood-global-content/default/dwa9365a33/images/plp/AW2526/Womens/PLP_inline%20content%20asset_AW2526_Womenswear_Clothing_25.jpg?sw=1384&sh=1992&q=80" alt="">
+<!-- PRODUCT MODAL -->
+<div id="productModal">
+  <div id="modalBox">
+    <span class="close">&times;</span>
+    <img id="modalImg">
+    <h2 id="modalName"></h2>
+    <p id="modalPrice" style="font-size:22px;font-weight:bold;"></p>
+    <p id="modalInfo" style="font-size:14px;color:#444;"></p>
+  </div>
+</div>
 
+<script>
 
-   <img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9956bdd1/images/8203012LU-L00B0-_CAMEL_001_large.jpg?sw=684&sh=790&sm=fit&q=80">
-   <img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfb78931f/images/61030092-02P697-_PLATINUM-BLACK-PATINA-BLACK-Leather_002_large.jpg?sw=342&sh=395&sm=fit&q=80" alt="">
-   <img src="assets/j1.jpg">
-   <img src="assets/j2.jpg">
-   <img src="assets/j3.jpg">
-   <img src="assets/j4.jpg">
-   <img src="assets/j5.jpg">
-   <img src="assets/j6.jpg">
-   <img src="assets/j7.jpg">
-   <img src="assets/j8.jpg">
-   <img src="assets/j9.jpg">
-   <img src="assets/j10.jpg">
+const products = document.querySelectorAll(".product");
 
-    <img src="assets/j1.jpg">
-   <img src="assets/j2.jpg">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDABDV_vNDhzxreF1dF2bJ5Fdkhj6nyAtvIg&s" alt="">
-  <img src="asset">
+products.forEach(img => {
+  img.addEventListener("click", () => {
+
+    document.getElementById("modalImg").src = img.src;
+
+    document.getElementById("modalName").textContent = "Jewellery Item";
+    document.getElementById("modalPrice").textContent = "$ — Price";
+    document.getElementById("modalInfo").textContent = "High-quality hand-crafted accessory.";
+
+    document.getElementById("productModal").style.display = "flex";
+  });
+});
+
+document.querySelector(".close").onclick = () => {
+  document.getElementById("productModal").style.display = "none";
+};
+
+window.onclick = (event) => {
+  if (event.target === document.getElementById("productModal")) {
+    document.getElementById("productModal").style.display = "none";
+  }
+};
+</script>
+
+</body>
+</html>
